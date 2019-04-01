@@ -63,7 +63,18 @@ public void testMoveDown()
     System.out.println("moveDown");
         int i = 0;
         TodoList instance = new TodoList();
-        instance.moveDown(i);
+        String s = "stev";
+        instance.add(s);
+        
+        s = "stev";
+        instance.add(s);
+        
+        instance.moveDown(0);
+        String result = instance.elementAt(1);
+        String expresult = "stev";
+        assertEquals(expresult, result);
+        System.out.println("Element moved down");
+
 }
 
 @Test
