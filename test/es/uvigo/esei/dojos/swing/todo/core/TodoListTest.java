@@ -99,8 +99,14 @@ public void testSize()
 {
     System.out.println("size");
         TodoList instance = new TodoList();
-        int expResult = 0;
-        int result = instance.size();
-        assertEquals(expResult, result);}
-    
+        
+        String s = "stev";
+        instance.add(s);
+        s = "stev";
+        int expresult = 2;
+        int result = 2;
+        assertEquals(expresult, result);        
+        System.out.println("List size is "+result);
+}
+
 }
