@@ -104,9 +104,17 @@ public void testEditAt()
 public void testRemoveAt() 
 {
      System.out.println("removeAt");
-        int i = 0;
+        int i1 = 0;
+        String m;
+ 
         TodoList instance = new TodoList();
-        instance.removeAt(i);
+        m = "Mike";
+        instance.add(m);
+        i1 = instance.size();
+        instance.removeAt(0);
+        int i2 = instance.size();
+        assertTrue(i2<i1);
+        System.out.println("Element has been removed");
 }
 
 @Test
