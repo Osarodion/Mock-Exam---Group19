@@ -44,37 +44,63 @@ public class TodoListTest {
     @Test
 public void testMoveUp() 
 {
-fail("Not yet implemented");
+    System.out.println("moveUp");
+        int i = 0;
+        TodoList instance = new TodoList();
+        String s = "stev";
+        instance.add(s);
+       
+        instance.moveUp(i);
+        String result = instance.elementAt(0);
+        String expresult = "stev";
+        assertEquals(expresult, result);
+        
 }
 
 @Test
 public void testMoveDown() 
 {
-fail("Not yet implemented");
+    System.out.println("moveDown");
+        int i = 0;
+        TodoList instance = new TodoList();
+        instance.moveDown(i);
 }
 
 @Test
 public void testAdd() 
 {
-fail("Not yet implemented");
+   System.out.println("add");
+        String item = "";
+        TodoList instance = new TodoList();
+        instance.add(item); 
 }
 
 @Test
 public void testEditAt() 
 {
-fail("Not yet implemented");
+      System.out.println("editAt");
+        int i = 0;
+        String newValue = "";
+        TodoList instance = new TodoList();
+        instance.editAt(i, newValue);
 }
 
 @Test
 public void testRemoveAt() 
 {
-fail("Not yet implemented");
+     System.out.println("removeAt");
+        int i = 0;
+        TodoList instance = new TodoList();
+        instance.removeAt(i);
 }
 
 @Test
 public void testSize() 
 {
-fail("Not yet implemented");
-}
+    System.out.println("size");
+        TodoList instance = new TodoList();
+        int expResult = 0;
+        int result = instance.size();
+        assertEquals(expResult, result);}
     
 }
