@@ -95,9 +95,13 @@ public void testEditAt()
 {
       System.out.println("editAt");
         int i = 0;
-        String newValue = "";
+        String newValue = "name";
         TodoList instance = new TodoList();
-        instance.editAt(i, newValue);
+        instance.add(newValue);
+        String expresult = "name";
+        String result = instance.elementAt(0);
+        assertEquals(expresult,result);
+        System.out.println("Edited");
 }
 
 @Test
