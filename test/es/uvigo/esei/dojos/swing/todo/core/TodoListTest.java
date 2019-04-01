@@ -80,10 +80,14 @@ public void testMoveDown()
 @Test
 public void testAdd() 
 {
+    int i = 0;
    System.out.println("add");
-        String item = "";
+        String item = "Mike";
         TodoList instance = new TodoList();
         instance.add(item); 
+        i = instance.size();
+        assertTrue(i>0);
+       System.out.println("Element added"); 
 }
 
 @Test
